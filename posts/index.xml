@@ -6,8 +6,91 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Pablo M. Canseco</copyright>
-        <lastBuildDate>Sat, 08 Feb 2020 16:46:53 -0600</lastBuildDate>
+        <lastBuildDate>Sat, 15 Feb 2020 22:31:10 -0700</lastBuildDate>
         <atom:link href="//pa.blocanse.co/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Easily Test Your Game Boy Emulator Implementation</title>
+            <link>//pa.blocanse.co/posts/gameboy-testing/</link>
+            <pubDate>Sat, 15 Feb 2020 22:31:10 -0700</pubDate>
+            
+            <guid>//pa.blocanse.co/posts/gameboy-testing/</guid>
+            <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+[{ &amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 127, &amp;#34;l&amp;#34;: 255,&amp;#34;pc&amp;#34;: 12, &amp;#34;sp&amp;#34;: 65534},{&amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 255, &amp;#34;l&amp;#34;: 38,&amp;#34;pc&amp;#34;: 15, &amp;#34;sp&amp;#34;: 65534},// and so on.</description>
+            <content type="html"><![CDATA[
+    <img src="https://camo.githubusercontent.com/625b07495d4343ca6a1d770a6f937a486ed9b26e/68747470733a2f2f692e696d6775722e636f6d2f367a62646142332e676966"  alt="gameboy bootrom"  class="center"  />
+
+
+<p><strong>TL;DR I have compiled a file of expected values for every register at 
+each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You 
+can download it <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">here</a> 
+and use it to easily test your Game Boy emulator for correctness.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[
+  { 
+    <span style="color:#f92672">&#34;a&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;b&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;c&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;d&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#f92672">&#34;e&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;f&#34;</span>: <span style="color:#ae81ff">160</span>, <span style="color:#f92672">&#34;h&#34;</span>: <span style="color:#ae81ff">127</span>, <span style="color:#f92672">&#34;l&#34;</span>: <span style="color:#ae81ff">255</span>,
+    <span style="color:#f92672">&#34;pc&#34;</span>: <span style="color:#ae81ff">12</span>, <span style="color:#f92672">&#34;sp&#34;</span>: <span style="color:#ae81ff">65534</span>
+  },
+  {
+    <span style="color:#f92672">&#34;a&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;b&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;c&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;d&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#f92672">&#34;e&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">&#34;f&#34;</span>: <span style="color:#ae81ff">160</span>, <span style="color:#f92672">&#34;h&#34;</span>: <span style="color:#ae81ff">255</span>, <span style="color:#f92672">&#34;l&#34;</span>: <span style="color:#ae81ff">38</span>,
+    <span style="color:#f92672">&#34;pc&#34;</span>: <span style="color:#ae81ff">15</span>, <span style="color:#f92672">&#34;sp&#34;</span>: <span style="color:#ae81ff">65534</span>
+  },
+  <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">/</span> <span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">d</span> <span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">o</span> <span style="color:#960050;background-color:#1e0010">o</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#960050;background-color:#1e0010">.</span> <span style="color:#960050;background-color:#1e0010">r</span><span style="color:#960050;background-color:#1e0010">o</span><span style="color:#960050;background-color:#1e0010">u</span><span style="color:#960050;background-color:#1e0010">g</span><span style="color:#960050;background-color:#1e0010">h</span><span style="color:#960050;background-color:#1e0010">l</span><span style="color:#960050;background-color:#1e0010">y</span> <span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">0</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">0</span> <span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">m</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">.</span>
+]
+</code></pre></div><h2 id="what-is-this">What is this?</h2>
+<p>This is the output of a program that took a screenshot of the debug window
+of <a href="http://bgb.bircd.org/">BGB</a> showing the CPU register values at each 
+CPU cycle throughout the bootrom (scrolling Nintendo logo) sequence like this:</p>
+
+    <img src="bgb-cpu-debugger.jpg"  alt="BGB CPU Debugger"  class="center"  />
+
+
+<p>Each screenshot was ran through an optical character recognition (OCR) 
+library called <a href="https://github.com/tesseract-ocr/">Tesseract</a> in order to
+extract the register values as strings. The resulting values were then 
+dumped to JSON like in the example above.</p>
+<p>A developer working on a Game Boy emulator could then easily write a test
+program that keeps a counter to keep track of elapsed cpu cycles and use
+that counter as an index to pull the expected values of each CPU register
+from the JSON file and see if the values match. It could be used initially
+to increase the correctness of an emulator, and then as a regression test 
+to ensure previously-working CPU instructions aren&rsquo;t broken.</p>
+<h2 id="how-do-i-use-it">How do I use it?</h2>
+<ol>
+<li>Download the <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">JSON file from here</a></li>
+<li>Unmarshal it into an array in-memory (it&rsquo;s just a 500KB file, any modern 
+PC should be able to hold it in-memory with no problem.)</li>
+<li>Start your emulator, pause it after the very first cycle.</li>
+<li>Grab your CPU register values (pseudocode): <code>int actualRegA = cpu.RegisterA</code></li>
+<li>Grab your expected register values (pseudocode): <code>int expectedRegA = ExpValues[elapsedCycles].a</code></li>
+<li>If they match, whatever instruction was just executed by your CPU was
+implemented correctly (woohoo!) or you got astronomically lucky (awww!)</li>
+<li>Step your emulator CPU, pause it again, go to step 4.</li>
+</ol>
+<p>Bonus points if you do this in a continuous integration system which runs
+against each source code change.</p>
+<h2 id="caveats">Caveats</h2>
+<p>It&rsquo;s just the first 12,000 or so instructions. The Nintendo logo isn&rsquo;t even
+visible by the time the CPU has executed 12,000 cycles. However, it&rsquo;s a
+decent smoke test, and better than doing it manually 🙂</p>
+<h2 id="why">Why?</h2>
+<p>Game Boy emulator development is difficult. Throughout the development of 
+<a href="https://github.com/pmcanseco/java-gb">java-gb</a> I was constantly struggling
+with figuring out how to test for correctness. I had resorted to using
+<a href="http://bgb.bircd.org/">BGB</a>&lsquo;s debugger, manually stepping the CPU and
+seeing if the register values matched those of my implementation. It was a
+painful and manual process.</p>
+<p>It turns out that BGB has a <em>-headless</em> command-line argument that it claims
+runs with no window or I/O of any kind. I thought this would be useful for
+automated testing, but I wasn&rsquo;t able to work.</p>
+<p>I really wanted a simple, easy, and repeatable way to smoke/regression test 
+my Game Boy emulator, so here we are.</p>
+<hr>
+<p>Did you find this useful? Are there any errata that should be fixed? Let me know!
+My contact information is on the homepage.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Senior Capstone Project</title>
@@ -18,9 +101,9 @@
             <description>Florida Tech Team ARES Project Page Fall 2015 ~ Spring 2016 It seems you are using an outdated browser that does not support canvas 
 
 Download Latest Build&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spin &amp;nbsp;&amp;nbsp;&amp;nbsp;(drag to rotate, scroll to zoom)
-    Project Name Command-and-Control Subsystem for Regolith Mining Robot   Github pmcanseco/ares   Team Member Info Pablo Canseco
-pcanseco2011 (a) my.fit.edu   Faculty Sponsor Dr. Keith Gallagher
-Dr. Chan’s Website     First Semester    Plan</description>
+Project NameCommand-and-Control Subsystem for Regolith Mining RobotGithubpmcanseco/aresTeam Member InfoPablo Canseco
+pcanseco2011 (a) my.fit.eduFaculty SponsorDr. Keith Gallagher
+Dr. Chan’s WebsiteFirst Semester Plan</description>
             <content type="html"><![CDATA[<h2 id="florida-tech-team-ares-project-page">Florida Tech Team ARES Project Page</h2>
 <h3 id="fall-2015--spring-2016">Fall 2015 ~ Spring 2016</h3>
 <p style="text-align: right;">

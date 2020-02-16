@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pablo M. Canseco</title>
-    <link>//pa.blocanse.co/</link>
-    <description>Recent content on Pablo M. Canseco</description>
+    <title>testing on Pablo M. Canseco</title>
+    <link>//pa.blocanse.co/tags/testing/</link>
+    <description>Recent content in testing on Pablo M. Canseco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Pablo M. Canseco</copyright>
     <lastBuildDate>Sat, 15 Feb 2020 22:31:10 -0700</lastBuildDate>
     
-	<atom:link href="//pa.blocanse.co/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//pa.blocanse.co/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,29 +20,6 @@
       <guid>//pa.blocanse.co/posts/gameboy-testing/</guid>
       <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 127, &amp;#34;l&amp;#34;: 255,&amp;#34;pc&amp;#34;: 12, &amp;#34;sp&amp;#34;: 65534},{&amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 255, &amp;#34;l&amp;#34;: 38,&amp;#34;pc&amp;#34;: 15, &amp;#34;sp&amp;#34;: 65534},// and so on.</description>
-    </item>
-    
-    <item>
-      <title>Senior Capstone Project</title>
-      <link>//pa.blocanse.co/nasarmc/</link>
-      <pubDate>Sat, 08 Feb 2020 16:46:53 -0600</pubDate>
-      
-      <guid>//pa.blocanse.co/nasarmc/</guid>
-      <description>Florida Tech Team ARES Project Page Fall 2015 ~ Spring 2016 It seems you are using an outdated browser that does not support canvas 
-
-Download Latest Build&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spin &amp;nbsp;&amp;nbsp;&amp;nbsp;(drag to rotate, scroll to zoom)
-Project NameCommand-and-Control Subsystem for Regolith Mining RobotGithubpmcanseco/aresTeam Member InfoPablo Canseco
-pcanseco2011 (a) my.fit.eduFaculty SponsorDr. Keith Gallagher
-Dr. Chan’s WebsiteFirst Semester Plan</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>//pa.blocanse.co/posts/my-first-post/</link>
-      <pubDate>Fri, 07 Feb 2020 11:21:52 -0600</pubDate>
-      
-      <guid>//pa.blocanse.co/posts/my-first-post/</guid>
-      <description>Welcome to my website!</description>
     </item>
     
   </channel>
