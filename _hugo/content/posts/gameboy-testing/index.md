@@ -79,7 +79,7 @@ painful and manual process.
 
 It turns out that BGB has a _-headless_ command-line argument that it claims
 runs with no window or I/O of any kind. I thought this would be useful for
-automated testing, but I wasn't able to work. 
+automated testing, but I wasn't able to get it to work. 
 
 I really wanted a simple, easy, and repeatable way to smoke/regression test 
 my Game Boy emulator, so here we are.
