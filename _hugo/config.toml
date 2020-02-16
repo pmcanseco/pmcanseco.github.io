@@ -1,4 +1,4 @@
-baseURL = "//pmcanseco.github.io/"
+baseURL = "//pa.blocanse.co/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 publishDir = "../"

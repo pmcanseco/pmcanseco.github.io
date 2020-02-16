@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Pablo M. Canseco</title>
-    <link>//pmcanseco.github.io/tags/</link>
+    <link>//pa.blocanse.co/tags/</link>
     <description>Recent content in Tags on Pablo M. Canseco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Pablo M. Canseco</copyright>
     <lastBuildDate>Sat, 08 Feb 2020 16:46:53 -0600</lastBuildDate>
     
-	<atom:link href="//pmcanseco.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//pa.blocanse.co/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>untagged</title>
-      <link>//pmcanseco.github.io/tags/untagged/</link>
+      <link>//pa.blocanse.co/tags/untagged/</link>
       <pubDate>Sat, 08 Feb 2020 16:46:53 -0600</pubDate>
       
-      <guid>//pmcanseco.github.io/tags/untagged/</guid>
+      <guid>//pa.blocanse.co/tags/untagged/</guid>
       <description></description>
     </item>
     
