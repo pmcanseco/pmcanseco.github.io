@@ -67,7 +67,7 @@ against each source code change.
 ## Caveats
 It's just the first 12,000 or so instructions. The Nintendo logo isn't even
 visible by the time the CPU has executed 12,000 cycles. However, it's a
-decent smoke test, and better than doing it manually 🙂
+decent smoke test and better than doing it manually 🙂
 
 ## Why?
 Game Boy emulator development is difficult. Throughout the development of 
