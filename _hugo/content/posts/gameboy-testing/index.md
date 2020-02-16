@@ -1,7 +1,7 @@
 ---
 title: "Easily Test Your Game Boy Emulator Implementation"
 date: 2020-02-15T22:31:10-07:00
-draft: false
+draft: true
 tags:
   - gameboy
   - emulation
