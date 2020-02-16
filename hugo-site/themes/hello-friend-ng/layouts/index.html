@@ -1,7 +1,9 @@
 {{ define "main" }}
     <main aria-role="main">
         <div class="main-index-container">
-            <img src="fb-profile-goldengate.jpg" alt="profile picture" class="profile-pic"/>
+            {{- with .Site.BaseURL }}
+                <img src="{{.}}fb-profile-goldengate.jpg" alt="profile picture" class="profile-pic"/>
+            {{- end }}
 
             <h1 style="margin-bottom: 0">{{ .Site.Title }}</h1>
 
