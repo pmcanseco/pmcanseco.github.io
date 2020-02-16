@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+<meta name="description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles of the bootrom sequence in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 127, &amp;#34;l&amp;#34;: 255,&amp;#34;pc&amp;#34;: 12, &amp;#34;sp&amp;#34;: 65534},{&amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 255, &amp;#34;l&amp;#34;: 38,&amp;#34;pc&amp;#34;: 15, &amp;#34;sp&amp;#34;: 65534},// and so on." />
 <meta name="keywords" content="pablo, canseco, twilio, software, homepage, blog, engineering, development, programming, science, informatics, gameboy, emulation, testing" />
 <meta name="robots" content="noodp" />
@@ -31,11 +31,11 @@
 
 
 <meta itemprop="name" content="Easily Test Your Game Boy Emulator Implementation">
-<meta itemprop="description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+<meta itemprop="description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles of the bootrom sequence in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &#34;a&#34;: 0, &#34;b&#34;: 0, &#34;c&#34;: 0, &#34;d&#34;: 0,&#34;e&#34;: 0, &#34;f&#34;: 160, &#34;h&#34;: 127, &#34;l&#34;: 255,&#34;pc&#34;: 12, &#34;sp&#34;: 65534},{&#34;a&#34;: 0, &#34;b&#34;: 0, &#34;c&#34;: 0, &#34;d&#34;: 0,&#34;e&#34;: 0, &#34;f&#34;: 160, &#34;h&#34;: 255, &#34;l&#34;: 38,&#34;pc&#34;: 15, &#34;sp&#34;: 65534},// and so on.">
 <meta itemprop="datePublished" content="2020-02-15T22:31:10-07:00" />
 <meta itemprop="dateModified" content="2020-02-15T22:31:10-07:00" />
-<meta itemprop="wordCount" content="532">
+<meta itemprop="wordCount" content="539">
 <meta itemprop="image" content="//pa.blocanse.co/"/>
 
 
@@ -44,7 +44,7 @@
 <meta name="twitter:image" content="//pa.blocanse.co/"/>
 
 <meta name="twitter:title" content="Easily Test Your Game Boy Emulator Implementation"/>
-<meta name="twitter:description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+<meta name="twitter:description" content="TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles of the bootrom sequence in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &#34;a&#34;: 0, &#34;b&#34;: 0, &#34;c&#34;: 0, &#34;d&#34;: 0,&#34;e&#34;: 0, &#34;f&#34;: 160, &#34;h&#34;: 127, &#34;l&#34;: 255,&#34;pc&#34;: 12, &#34;sp&#34;: 65534},{&#34;a&#34;: 0, &#34;b&#34;: 0, &#34;c&#34;: 0, &#34;d&#34;: 0,&#34;e&#34;: 0, &#34;f&#34;: 160, &#34;h&#34;: 255, &#34;l&#34;: 38,&#34;pc&#34;: 15, &#34;sp&#34;: 65534},// and so on."/>
 
 
@@ -128,8 +128,8 @@
 
 
 <p><strong>TL;DR I have compiled a file of expected values for every register at 
-each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You 
-can download it <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">here</a> 
+each CPU cycle for the first 12,000 or so CPU cycles of the bootrom
+sequence in JSON format. You can download it <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">here</a> 
 and use it to easily test your Game Boy emulator for correctness.</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[
   { 
@@ -179,7 +179,7 @@ against each source code change.</p>
 <h2 id="caveats">Caveats</h2>
 <p>It&rsquo;s just the first 12,000 or so instructions. The Nintendo logo isn&rsquo;t even
 visible by the time the CPU has executed 12,000 cycles. However, it&rsquo;s a
-decent smoke test, and better than doing it manually 🙂</p>
+decent smoke test and better than doing it manually 🙂</p>
 <h2 id="why">Why?</h2>
 <p>Game Boy emulator development is difficult. Throughout the development of 
 <a href="https://github.com/pmcanseco/java-gb">java-gb</a> I was constantly struggling
@@ -189,7 +189,7 @@ seeing if the register values matched those of my implementation. It was a
 painful and manual process.</p>
 <p>It turns out that BGB has a <em>-headless</em> command-line argument that it claims
 runs with no window or I/O of any kind. I thought this would be useful for
-automated testing, but I wasn&rsquo;t able to work.</p>
+automated testing, but I wasn&rsquo;t able to get it to work.</p>
 <p>I really wanted a simple, easy, and repeatable way to smoke/regression test 
 my Game Boy emulator, so here we are.</p>
 <hr>
@@ -206,7 +206,7 @@ My contact information is on the homepage.</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="//pa.blocanse.co/tags/gameboy">gameboy</a></span><span class="tag"><a href="//pa.blocanse.co/tags/emulation">emulation</a></span><span class="tag"><a href="//pa.blocanse.co/tags/testing">testing</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>532 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>539 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>15 Feb 2020 22:31:10 MST</p>
         </div>

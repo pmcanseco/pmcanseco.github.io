@@ -15,15 +15,15 @@
             <pubDate>Sat, 15 Feb 2020 22:31:10 -0700</pubDate>
             
             <guid>//pa.blocanse.co/posts/gameboy-testing/</guid>
-            <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+            <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles of the bootrom sequence in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 127, &amp;#34;l&amp;#34;: 255,&amp;#34;pc&amp;#34;: 12, &amp;#34;sp&amp;#34;: 65534},{&amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 255, &amp;#34;l&amp;#34;: 38,&amp;#34;pc&amp;#34;: 15, &amp;#34;sp&amp;#34;: 65534},// and so on.</description>
             <content type="html"><![CDATA[
     <img src="https://camo.githubusercontent.com/625b07495d4343ca6a1d770a6f937a486ed9b26e/68747470733a2f2f692e696d6775722e636f6d2f367a62646142332e676966"  alt="gameboy bootrom"  class="center"  />
 
 
 <p><strong>TL;DR I have compiled a file of expected values for every register at 
-each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You 
-can download it <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">here</a> 
+each CPU cycle for the first 12,000 or so CPU cycles of the bootrom
+sequence in JSON format. You can download it <a href="https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt">here</a> 
 and use it to easily test your Game Boy emulator for correctness.</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[
   { 
@@ -73,7 +73,7 @@ against each source code change.</p>
 <h2 id="caveats">Caveats</h2>
 <p>It&rsquo;s just the first 12,000 or so instructions. The Nintendo logo isn&rsquo;t even
 visible by the time the CPU has executed 12,000 cycles. However, it&rsquo;s a
-decent smoke test, and better than doing it manually 🙂</p>
+decent smoke test and better than doing it manually 🙂</p>
 <h2 id="why">Why?</h2>
 <p>Game Boy emulator development is difficult. Throughout the development of 
 <a href="https://github.com/pmcanseco/java-gb">java-gb</a> I was constantly struggling
@@ -83,7 +83,7 @@ seeing if the register values matched those of my implementation. It was a
 painful and manual process.</p>
 <p>It turns out that BGB has a <em>-headless</em> command-line argument that it claims
 runs with no window or I/O of any kind. I thought this would be useful for
-automated testing, but I wasn&rsquo;t able to work.</p>
+automated testing, but I wasn&rsquo;t able to get it to work.</p>
 <p>I really wanted a simple, easy, and repeatable way to smoke/regression test 
 my Game Boy emulator, so here we are.</p>
 <hr>

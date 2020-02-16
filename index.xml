@@ -18,7 +18,7 @@
       <pubDate>Sat, 15 Feb 2020 22:31:10 -0700</pubDate>
       
       <guid>//pa.blocanse.co/posts/gameboy-testing/</guid>
-      <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
+      <description>TL;DR I have compiled a file of expected values for every register at each CPU cycle for the first 12,000 or so CPU cycles of the bootrom sequence in JSON format. You can download it here and use it to easily test your Game Boy emulator for correctness.
 [{ &amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 127, &amp;#34;l&amp;#34;: 255,&amp;#34;pc&amp;#34;: 12, &amp;#34;sp&amp;#34;: 65534},{&amp;#34;a&amp;#34;: 0, &amp;#34;b&amp;#34;: 0, &amp;#34;c&amp;#34;: 0, &amp;#34;d&amp;#34;: 0,&amp;#34;e&amp;#34;: 0, &amp;#34;f&amp;#34;: 160, &amp;#34;h&amp;#34;: 255, &amp;#34;l&amp;#34;: 38,&amp;#34;pc&amp;#34;: 15, &amp;#34;sp&amp;#34;: 65534},// and so on.</description>
     </item>
     
