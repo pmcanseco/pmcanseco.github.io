@@ -1,0 +1,9 @@
+<ul class="social-icons-ul">
+    {{ range . -}}
+        <li>
+            <a href="{{ .url }}" {{if .newTab }}target="_blank"{{end}} rel="noopener" title="{{ .name | humanize }}" style="text-decoration: none">
+                <b>{{ partial "svg.html" . }} &nbsp;{{if .display }}{{ .display }}{{else}}{{ .name | humanize }}{{end}}</b>
+            </a>
+        </li>
+    {{- end -}}
+</ul>

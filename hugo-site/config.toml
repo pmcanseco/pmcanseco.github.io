@@ -1,0 +1,85 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+publishDir = "../"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2 Jan 2006"
+  dateformNumTime = "2 Jan 2006 15:04:05 MST"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "Website of Pablo M. Canseco"
+  keywords = "pablo, canseco, twilio, software, homepage, blog, engineering, development, programming, science, informatics"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  enableEmoji = "true"
+
+  [[params.social]]
+    url = "mailto:p@blocanse.co"
+    name = "email"
+    display = "p@blocanse.co"
+
+  [[params.social]]
+    url = "https://twitter.com/pmcanseco"
+    name = "twitter"
+    display = "@pmcanseco"
+
+  [[params.social]]
+    url = "https://drive.google.com/file/d/0BwE12ZZHqvHcR1BxZFM3MlRQblU/view"
+    name = "resume"
+    newTab = true
+
+  [[params.social]]
+    url = "https://linkedin.com/in/pablocanseco"
+    name = "linkedin"
+    newTab = true
+    display = "/in/pablocanseco"
+
+  [[params.social]]
+    url = "https://github.com/pmcanseco"
+    name = "github"
+    newTab = true
+    display = "pmcanseco"
+
+  [[params.social]]
+    url = "https://stackoverflow.com/users/1124793/"
+    name = "stackoverflow"
+    newTab = true
+    display = "pablo-canseco"
+
+[languages]
+  [languages.en]
+    title = "Pablo M. Canseco"
+    homeSubtitle = "Back-end software engineer and occasional hardware hacker"
+    copyright = "Pablo M. Canseco"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "cd $HOME/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Posts"
+    url        = "/posts"
