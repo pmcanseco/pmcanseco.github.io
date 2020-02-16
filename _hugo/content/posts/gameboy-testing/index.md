@@ -11,8 +11,8 @@ tags:
 {{< image src="https://camo.githubusercontent.com/625b07495d4343ca6a1d770a6f937a486ed9b26e/68747470733a2f2f692e696d6775722e636f6d2f367a62646142332e676966" alt="gameboy bootrom" position="center" >}}
 
 **TL;DR I have compiled a file of expected values for every register at 
-each CPU cycle for the first 12,000 or so CPU cycles in JSON format. You 
-can download it [here](https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt) 
+each CPU cycle for the first 12,000 or so CPU cycles of the bootrom
+sequence in JSON format. You can download it [here](https://github.com/pmcanseco/java-gb/blob/master/src/test/resources/full-bios.txt) 
 and use it to easily test your Game Boy emulator for correctness.**
 
 ```json
