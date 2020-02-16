@@ -2,7 +2,11 @@
     <main aria-role="main">
         <div class="main-index-container">
             {{- with .Site.BaseURL }}
-                <img src="{{.}}fb-profile-goldengate.webp" alt="profile picture" class="profile-pic"/>
+                <img src="{{.}}fb-profile-goldengate.webp" srcset="
+                        fb-profile-goldengate_w_200.webp 200w,
+                        fb-profile-goldengate_w_591.webp 591w,
+                        fb-profile-goldengate_w_860.webp 860w"
+                     alt="profile picture" class="profile-pic"/>
             {{- end }}
 
             <h1 style="margin-bottom: 0">{{ .Site.Title }}</h1>
