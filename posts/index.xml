@@ -1,27 +1,17 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Posts on Pablo M. Canseco</title>
-        <link>//pa.blocanse.co/posts/</link>
-        <description>Recent content in Posts on Pablo M. Canseco</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <copyright>Pablo M. Canseco</copyright>
-        <lastBuildDate>Sat, 08 Feb 2020 16:46:53 -0600</lastBuildDate>
-        <atom:link href="//pa.blocanse.co/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Senior Capstone Project</title>
-            <link>//pa.blocanse.co/nasarmc/</link>
-            <pubDate>Sat, 08 Feb 2020 16:46:53 -0600</pubDate>
-            
-            <guid>//pa.blocanse.co/nasarmc/</guid>
-            <description>Florida Tech Team ARES Project Page Fall 2015 ~ Spring 2016 It seems you are using an outdated browser that does not support canvas 
-
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Pablo M. Canseco</title><link>//pa.blocanse.co/posts/</link><description>Recent content in Posts on Pablo M. Canseco</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Pablo M. Canseco</copyright><lastBuildDate>Sat, 08 Feb 2020 16:46:53 -0600</lastBuildDate><atom:link href="//pa.blocanse.co/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Senior Capstone Project</title><link>//pa.blocanse.co/nasarmc/</link><pubDate>Sat, 08 Feb 2020 16:46:53 -0600</pubDate><guid>//pa.blocanse.co/nasarmc/</guid><description>Florida Tech Team ARES Project Page Fall 2015 ~ Spring 2016 It seems you are using an outdated browser that does not support canvas
 Download Latest Build&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spin &amp;nbsp;&amp;nbsp;&amp;nbsp;(drag to rotate, scroll to zoom)
-Project NameCommand-and-Control Subsystem for Regolith Mining RobotGithubpmcanseco/aresTeam Member InfoPablo Canseco
-pcanseco2011 (a) my.fit.eduFaculty SponsorDr. Keith Gallagher
-Dr. Chan’s WebsiteFirst Semester Plan</description>
-            <content type="html"><![CDATA[<h2 id="florida-tech-team-ares-project-page">Florida Tech Team ARES Project Page</h2>
+Project Name
+Command-and-Control Subsystem for Regolith Mining Robot
+Github
+pmcanseco/ares
+Team Member Info
+Pablo Canseco
+pcanseco2011 (a) my.fit.edu
+Faculty Sponsor
+Dr. Keith Gallagher
+Dr. Chan’s Website
+First Semester
+Plan</description><content type="html"><![CDATA[<h2 id="florida-tech-team-ares-project-page">Florida Tech Team ARES Project Page</h2>
 <h3 id="fall-2015--spring-2016">Fall 2015 ~ Spring 2016</h3>
 <p style="text-align: right;">
     <canvas id="cv" style="padding: 0; margin: auto; display: block;" width="500" height="400"><br>
@@ -97,19 +87,4 @@ Dr. Chan’s WebsiteFirst Semester Plan</description>
             <td style="padding: 1em"><a href="https://docs.google.com/presentation/d/1qmilLUlUCSp21IWvLZmZRIfIkDBroxqvG3ZYH-YjrL8/edit?usp=sharing" target="_blank">Presentation</a>, <a href="/nasarmc/milestone6.pdf" target="_blank">Progress Evaluation</a>, <a href="https://youtu.be/zHPotvb705s" target="_blank">Demo Video</a>, <a href="/nasarmc/manual.pdf" target="_blank">User Manual</a></td>
         </tr>
     </tbody>
-</table>]]></content>
-        </item>
-        
-        <item>
-            <title>My First Post</title>
-            <link>//pa.blocanse.co/posts/my-first-post/</link>
-            <pubDate>Fri, 07 Feb 2020 11:21:52 -0600</pubDate>
-            
-            <guid>//pa.blocanse.co/posts/my-first-post/</guid>
-            <description>Welcome to my website!</description>
-            <content type="html"><![CDATA[<p>Welcome to my website!</p>
-]]></content>
-        </item>
-        
-    </channel>
-</rss>
+</table>]]></content></item><item><title>My First Post</title><link>//pa.blocanse.co/posts/my-first-post/</link><pubDate>Fri, 07 Feb 2020 11:21:52 -0600</pubDate><guid>//pa.blocanse.co/posts/my-first-post/</guid><description>Welcome to my website!</description><content type="html">&lt;p>Welcome to my website!&lt;/p></content></item></channel></rss>
