@@ -42,7 +42,7 @@ publishDir = "../"
     display = "@pmcanseco"
 
   [[params.social]]
-    url = "https://drive.google.com/file/d/1vFKa4WEzXcgxJoiUY5mGHgDD7dnL4FDB/view"
+    url = "https://drive.google.com/file/d/1RKgo1NPAz-80e6Aaxs_5WzksQRdHG-aL/view"
     name = "resume"
     newTab = true
 
